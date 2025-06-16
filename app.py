@@ -682,9 +682,9 @@ if st.session_state.page == "home":
     """, unsafe_allow_html=True)
 
     # --- Horizontally aligned RBO Buttons with Equal Width ---
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
     rbo_names = ["RBO-1", "RBO-2"]
-    rbo_cols = [col1, col2, col3]
+    rbo_cols = [col1, col2]
 
     for col, rbo in zip(rbo_cols, rbo_names):
         with col:
